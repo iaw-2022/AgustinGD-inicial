@@ -18,6 +18,7 @@ erDiagram
     CATEGORIA{
         int id
         string nombre
+        string descripcion
     }
 ```
 
