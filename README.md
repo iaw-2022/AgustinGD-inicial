@@ -14,6 +14,7 @@ erDiagram
         string nombre
         string descripcion
         float precioPorUnidad
+        string imagen_dir
     }
     CATEGORIA{
         int id
