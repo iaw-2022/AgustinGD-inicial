@@ -23,17 +23,17 @@ erDiagram
 ## Actualizaciones a los datos ✏️
 
 ### Proyecto Framework PHP - Laravel
-
+   
 usuarios con rol "edicion" podran:
-    * cargar, borrar y editar productos.
-    * cargar, borrar y editar categorias.
+  * cargar, borrar y editar productos.
+  * cargar, borrar y editar categorias.
     
 usuarios con rol "actualizacion" podran:
-    * editar la disponibilidad e imagen de los productos.
+  * editar la disponibilidad e imagen de los productos.
     
 usuarios con rol "administrador" podran:
-    * administar usuarios
-    * lo mismo que el rol "edicion"
+  * administar usuarios
+  * lo mismo que el rol "edicion"
 
 ## Información del Servicio Web 📰
 
