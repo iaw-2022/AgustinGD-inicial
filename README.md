@@ -12,6 +12,7 @@ erDiagram
         int id
         boolean disponible
         string nombre
+        string descripcion
         float precioPorUnidad
     }
     CATEGORIA{
