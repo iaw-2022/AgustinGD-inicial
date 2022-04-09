@@ -7,22 +7,10 @@ La idea es realizar un aplicacion que permita administrar un catalogo de product
 ## Diagrama ER 👷
 ```mermaid
 erDiagram
-    CLIENTE ||--o{ RESERVA : realiza
-    CLIENTE {
-        int id
-        string nombre
-        string apellido
-        string email
-    }
-    RESERVA }o--|{ PRODUCTO : contiene
-    RESERVA {
-        int id
-        dateFormat fecha
-        int cantidad        
-    }
     PRODUCTO }o--|| CATEGORIA : pertenece
     PRODUCTO{
         int id
+        boolean disponible
         string nombre
         float precioPorUnidad
     }
@@ -34,7 +22,18 @@ erDiagram
 
 ## Actualizaciones a los datos ✏️
 
-> De qué forma se permitira agregar, modificar y quitar los datos en el Proyecto Framework PHP - Laravel
+### Proyecto Framework PHP - Laravel
+
+usuarios con rol "edicion" podran:
+    * cargar, borrar y editar productos.
+    * cargar, borrar y editar categorias.
+    
+usuarios con rol "actualizacion" podran:
+    * editar la disponibilidad e imagen de los productos.
+    
+usuarios con rol "administrador" podran:
+    * administar usuarios
+    * lo mismo que el rol "edicion"
 
 ## Información del Servicio Web 📰
 
