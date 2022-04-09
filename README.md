@@ -47,7 +47,8 @@ El Servicio Web permitira inspeccionar y reservar productos relacionados con la 
 
 ### Proyecto Javascript - React/Vue
 
-El usuario para buscar productos de la manera mas intuitiva posible, navegando con el mouse o ingresando texto podrá:
+El usuario para buscar productos de la manera mas intuitiva posible,
+navegando con el mouse o ingresando texto por teclado podrá:
   * Scrollear a traves del catagolo
   * Buscar algo especifico segun palabra clave
   * Ver productos de una categoria
