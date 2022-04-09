@@ -5,8 +5,32 @@
 La idea es realizar un aplicacion que permita administrar un catalogo de productos de la granja, donde se pueden buscar ciertos productos segun alguna palabra clave o caracteristica, y tambien reservar uno o varios productos usando un carrito de compras.
 
 ## Diagrama ER 👷
-
-> Se debe incluir un Diagrama ER de los datos a utilizar
+```mermaid
+erDiagram
+    CLIENTE ||--o{ RESERVA : realiza
+    CLIENTE {
+        int id
+        string nombre
+        string apellido
+        string email
+    }
+    RESERVA }o--|{ PRODUCTO : contiene
+    RESERVA {
+        int id
+        dateFormat fecha
+        int cantidad        
+    }
+    PRODUCTO }o--|| CATEGORIA : pertenece
+    PRODUCTO{
+        int id
+        string nombre
+        float precioPorUnidad
+    }
+    CATEGORIA{
+        int id
+        string nombre
+    }
+```
 
 ## Actualizaciones a los datos ✏️
 
