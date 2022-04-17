@@ -10,23 +10,50 @@ erDiagram
     PRODUCTO }o--|| CATEGORIA : pertenece
     PRODUCTO{
         int id
+        int categoria_id
         boolean disponible
         string nombre
         string descripcion
         float precioPorUnidad
         string imagen_dir
+        timestamp created_at
+        timestamp updated_at
     }
     CATEGORIA{
         int id
         string nombre
         string descripcion
+        timestamp created_at
+        timestamp updated_at
+    }
+    
+    USER }o--|| ROL : tiene
+    USER{
+        int id
+        int rol_id        
+        string name
+        string email
+        timestamp email_verified_at
+        string password
+        string remember_token
+        timestamp created_at
+        timestamp updated_at
+    }
+    ROL{
+        int id
+        string nombre
+        timestamp created_at
+        timestamp updated_at
     }
 ```
 
 ## Actualizaciones a los datos ✏️
 
 ### Proyecto Framework PHP - Laravel
-   
+
+usuarios con rol "user" podran:
+  * no tienen acceso a nada (se les debe asignar un rol distinto)
+ 
 usuarios con rol "edicion" podran:
   * cargar, borrar y editar productos.
   * cargar, borrar y editar categorias.
@@ -36,6 +63,7 @@ usuarios con rol "actualizacion" podran:
     
 usuarios con rol "administrador" podran:
   * administar usuarios
+  * ver timestamps de cuando los Productos y Categorias fueron creados/actualizados
   * lo mismo que el rol "edicion"
 
 ## Información del Servicio Web 📰
