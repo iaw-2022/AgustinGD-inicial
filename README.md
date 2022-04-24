@@ -70,6 +70,11 @@ erDiagram
 
 usuarios con rol "user":
   * solo puede ver el Home
+
+usuarios con rol "ventas" podran:
+  * ver productos.
+  * ver clientes.
+  * ver pedidos.
   
 usuarios con rol "actualizacion" podran:
   * editar la disponibilidad e imagen de los productos.
