@@ -70,17 +70,24 @@ erDiagram
 
 usuarios con rol "user":
   * solo puede ver el Home
- 
+  
+usuarios con rol "actualizacion" podran:
+  * editar la disponibilidad e imagen de los productos.
+
 usuarios con rol "edicion" podran:
   * cargar, borrar y editar productos.
   * cargar, borrar y editar categorias.
-    
-usuarios con rol "actualizacion" podran:
-  * editar la disponibilidad e imagen de los productos.
+  * cargar, borrar y editar clientes.
+  * cargar, borrar y editar pedidos.
     
 usuarios con rol "administrador" podran:
   * administar usuarios
-  * ver timestamps de cuando los Productos y Categorias fueron creados/actualizados
+  * ver timestamps de cuando fueron creados/actualizados los:
+     * Productos
+     * Categorias
+     * Clientes
+     * Pedidos
+     * Usuarios     
   * lo mismo que el rol "edicion"
 
 ## Información del Servicio Web 📰
