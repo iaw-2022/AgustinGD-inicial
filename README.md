@@ -68,8 +68,8 @@ erDiagram
 
 ### Proyecto Framework PHP - Laravel
 
-usuarios con rol "user" podran:
-  * no tienen acceso a nada (se les debe asignar un rol distinto)
+usuarios con rol "user":
+  * solo puede ver el Home
  
 usuarios con rol "edicion" podran:
   * cargar, borrar y editar productos.
