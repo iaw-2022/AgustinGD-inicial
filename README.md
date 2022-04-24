@@ -7,6 +7,23 @@ La idea es realizar un aplicacion que permita administrar un catalogo de product
 ## Diagrama ER 👷
 ```mermaid
 erDiagram
+    CLIENTE ||--o{ PEDIDO : hace
+    CLIENTE{
+        int id
+        string nombre
+        string email
+        timestamp created_at
+        timestamp updated_at
+    }
+    PEDIDO }o--|{ PRODUCTO : contiene
+    PEDIDO{
+        int id
+        int cliente_id
+        int producto_id
+        int cantidad
+        timestamp created_at
+        timestamp updated_at
+    }
     PRODUCTO }o--|| CATEGORIA : pertenece
     PRODUCTO{
         int id
