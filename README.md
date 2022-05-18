@@ -109,9 +109,12 @@ El Servicio Web permitira inspeccionar y reservar productos relacionados con la 
 
 El usuario para buscar productos de la manera mas intuitiva posible,
 navegando con el mouse o ingresando texto por teclado podrá:
-  * Scrollear a traves del catagolo
-  * Buscar algo especifico segun palabra clave
+  * Scrollear a traves del catagolo de categorias
   * Ver productos de una categoria
-  * Ordenar segun precio
-
-Mientras podra ir agregando productos a un carrito y finalmente hacer una reserva.
+  * Buscar algun producto especifico segun palabra clave
+  * Ordenar segun precio ascendente/descendente
+  * Ordenar segun nombre ascendente/descendente
+  * Agregar productos al carrito de compras
+  * Autenticarse en la Aplicacion Web, es decir, login/registro
+  * Realizar un pedido
+  * Ver "mis pedidos"
